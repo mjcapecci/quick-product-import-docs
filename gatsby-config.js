@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `Rocket Docs`,
-    defaultTitle: `Rocket Docs`,
-    siteTitleShort: `Rocket Docs`,
-    siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
-    siteUrl: `https://rocketdocs.netlify.com`,
-    siteAuthor: `@rocketseat`,
+    siteTitle: `Quick Product Import`,
+    defaultTitle: `Quick Product Import`,
+    siteTitleShort: `Quick Product Import`,
+    siteDescription: `The quickest and most user-friendly Shopify app for uploading products to your store with a simple .CSV spreadsheet.`,
+    siteUrl: `https://quickproductimport.com`,
+    siteAuthor: `Frontier Web Development`,
     siteImage: `/banner.png`,
     siteLanguage: `en`,
-    themeColor: `#8257E6`,
+    themeColor: `#333`,
     basePath: `/`,
   },
   plugins: [
@@ -24,8 +24,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Rocketseat Gatsby Themes`,
-        short_name: `RS Gatsby Themes`,
+        name: `Quick Product Import`,
+        short_name: `Quick Product Import`,
         start_url: `/`,
         background_color: `#ffffff`,
         display: `standalone`,
