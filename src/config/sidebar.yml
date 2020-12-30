@@ -2,16 +2,14 @@
 
 - label: 'Introduction'
   link: '/'
-- label: 'Getting started'
-  link: '/getting-started'
-- label: Usage
+- label: 'General Usage'
+  link: '/general-usage'
+- label: Formatting
   items:
-    - label: 'Creating docs'
-      link: '/usage/creating-docs'
-    - label: 'Navigation'
-      link: '/usage/navigation'
-    - label: 'Shadowing'
-      link: '/usage/shadowing'
+    - label: 'Row Types'
+      link: '/formatting/row-types'
+    - label: 'Field Information'
+      link: '/formatting/field-information'
 - label: More
   items:
     - label: FAQ
