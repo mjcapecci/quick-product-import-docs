@@ -5,42 +5,50 @@ description: Learn how to create docs using Rocket Docs.
 
 For more information about the differences between base product, variant, and image rows, [see row type documentation](row-types).
 
-| Header                       | Description                    | Accepted Values |
-| ---------------------------- | ------------------------------ | --------------- |
-| Handle                       | The handle of the base product | String          |
-| Title                        | the title of the base product  | String          |
-| Body (HTML)                  | Page description               | String / HTML   |
-| Image Src                    | [Filler]                       | String / HTML   |
-| Image Alt Text               | [Filler]                       | String / HTML   |
-| SEO Title                    | [Filler]                       |
-| SEO Description              | [Filler]                       |
-| Type                         | [Filler]                       |
-| Tags                         | [Filler]                       |
-| Status                       | [Filler]                       |
-| Published                    | [Filler]                       |
-| Variant SKU                  | [Filler]                       |
-| Variant Price                | [Filler]                       |
-| Vendor                       | [Filler]                       |
-| Option1 Name                 | [Filler]                       |
-| Option1 Value                | [Filler]                       |
-| Option2 Name                 | [Filler]                       |
-| Option2 Value                | [Filler]                       |
-| Option3 Name                 | [Filler]                       |
-| Option3 Value                | [Filler]                       |
-| Join Collections             | [Filler]                       |
-| Variant Position             | [Filler]                       |
-| Variant Weight               | [Filler]                       |
-| Variant Inventory Qty        | [Filler]                       |
-| Variant Inventory Location   | [Filler]                       |
-| Variant Inventory Policy     | [Filler]                       |
-| Variant Inventory Tracked    | [Filler]                       |
-| Variant Inventory Management | [Filler]                       |
-| Variant Inventory Management | [Filler]                       |
-| Variant Compare At Price     | [Filler]                       |
-| Variant Requires Shipping    | [Filler]                       |
-| Variant Requires Taxable     | [Filler]                       |
-| Variant Requires Taxable     | [Filler]                       |
-| Variant Tax Code             | [Filler]                       |
-| Variant Barcode              | [Filler]                       |
-| Cost Per Item                | [Filler]                       |
-| Gift Card                    | [Filler]                       |
+## Field Types
+
+| Header                       | Description                                                        | Accepted Values                           |
+| ---------------------------- | ------------------------------------------------------------------ | ----------------------------------------- |
+| Handle                       | Handle of the base product                                         | Text                                      |
+| Title                        | Title of the base product                                          | Text                                      |
+| Body (HTML)                  | Product description that will appear on product page               | Text / HTML                               |
+| Image Src                    | URL of image                                                       | Text                                      |
+| Image Alt Text               | Alt text of associated row image                                   | Text                                      |
+| SEO Title                    | Product title that will appear on search results pages             | Text                                      |
+| SEO Description              | Product description that will appear on search results pages       | Text                                      |
+| Type                         | Type of product                                                    | Text                                      |
+| Tags                         | All tags associated with the product                               | Comma Seperated Text                      |
+| Status                       | Product status following upload                                    | ACTIVE / DRAFT / ARCHIVE                  |
+| Published                    | Whether product is published after upload                          | TRUE / FALSE                              |
+| Variant SKU                  | SKU of variant or base variant                                     | Text                                      |
+| Variant Price                | Price of variant or base variant                                   | Number                                    |
+| Vendor                       | Name of vendor                                                     | Text                                      |
+| Option1 Name                 | Name of Option 1                                                   | Text                                      |
+| Option1 Value                | Variant or base variant value of Option 1                          | Text                                      |
+| Option2 Name                 | Name of Option 2                                                   | Text                                      |
+| Option2 Value                | Variant or base variant value of Option 2                          | Text                                      |
+| Option3 Name                 | Name of Option 3                                                   | Text                                      |
+| Option3 Value                | Variant or base variant value of Option 3                          | Text                                      |
+| Join Collections             | All collections for product to join after upload                   | Comma Seperated Text                      |
+| Variant Position             | Order in which a variant will appear on product page               | Number                                    |
+| Variant Weight               | Numerical product weight                                           | Number                                    |
+| Variant Inventory Qty        | Numerical variant inventory quantity                               | Number                                    |
+| Variant Inventory Location   | Location for which to associate product inventory                  | Text                                      |
+| Variant Inventory Policy     | Whether to accept orders if variant or base variant inventory is 0 | Continue / Deny                           |
+| Variant Inventory Tracked    | Whether Shopify updates variant inventory after a sale             | TRUE / FALSE                              |
+| Variant Inventory Management | Inventory management system used for a variant                     | FULLFILMENT_SERVICE, NOT_MANAGED, SHOPIFY |
+| Variant Compare At Price     | Competitor or non-discount price for variant                       | Number                                    |
+| Variant Requires Shipping    | Whether a variant is to be shipped after a sale                    | TRUE / FALSE                              |
+| Variant Requires Taxable     | Whether a variant is taxable after a sale                          | TRUE / FALSE                              |
+| Variant Tax Code             | Tax code for variant                                               | Text                                      |
+| Variant Barcode              | Barcode for variant                                                | Text                                      |
+| Cost Per Item                | Product cost to replenish unit                                     | Number                                    |
+| Gift Card                    | Whether a product is a gift card                                   | TRUE / FALSE                              |
+
+### Accepted Values Key
+
+| Value                   | Description                     | Example            |
+| ----------------------- | ------------------------------- | ------------------ |
+| String                  | Simple text                     | This is a string   |
+| String / HTML           | Text with HTML capabilities     | This is a string   |
+| Comma Separated Strings | Simple text seperated by commas | String 1, String 2 |
