@@ -4,19 +4,39 @@
   link: '/'
 - label: 'General Usage'
   link: '/general-usage'
+- label: 'Pricing'
+  link: '/pricing'
 - label: Formatting
   items:
     - label: 'Row Types'
       link: '/formatting/row-types'
     - label: 'Field Information'
       link: '/formatting/field-information'
+    - label: 'Spreadsheet'
+      link: '/formatting/spreadsheet'
+    - label: 'Metafields'
+      link: '/formatting/metafields'
+    - label: 'Limitations'
+      link: '/formatting/limitations'
+- label: Other Features
+  items:
+    - label: 'Mapping'
+      link: '/features/mapping'
+    - label: 'Verify Import'
+      link: '/features/verify-import'
+    - label: 'Upload Timer'
+      link: '/features/upload-timer'
+    - label: 'Revert Upload'
+      link: '/features/revert-upload'
+    - label: 'Settings'
+      link: '/features/settings'
 - label: More
   items:
     - label: FAQ
       link: /faq
     - label: Changelog
       link: /changelog
-- label: Community
+- label: 'Support'
   items:
-    - label: 'Github'
-      link: https://github.com/rocketseat/gatsby-themes
+    - label: 'Contact Us'
+      link: /contact
