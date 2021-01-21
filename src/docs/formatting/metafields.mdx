@@ -2,3 +2,33 @@
 title: Metafields
 description: Learn how to utilize metafields in Quick Product Import
 ---
+
+Shopify allows a robust metafield system for adding additional data to products and product variants. Quick Product Import allows merchants full control over adding metafield information to products and product variants to include at the time of upload.
+
+## Adding Custom Metafields
+
+The defining feature of a metafield is the **key: value** relationship that allows merchants to access additional data where necessary throughout their Shopify admin panel and online storefront. The **key** is the name of the metafield, and the **value** is the data associated with the key.
+
+To add a custom metafield, a merchant must simply include an additional header value on their spreadsheet that does not align with a built-in field value. The name of the column header will assume the position of the **key**, and the **value** becomes the data stored in the column of any applicable product row.
+
+## Metafields and Mapping
+
+Quick Product Import features a robust mapping system which will be covered in detail in a later section. Importantly, this mapping feature provides the ability to control two other essential metafield concepts that exist within the Shopify environment: **Namespaces** and **Value Types**.
+
+### Namespaces
+
+Namespaces exist to further organize a product or variant's metafields. For example, one third-party Shopify app may append metafield data to your products, and another app may append similar data at a later time. To avoid a conflict of datasets, each app can use its own namespace to create segments of metafields that are separated and organized. As a result, certain applications may only accept metafields from a namespace that they recognize.
+
+Quick Product Import's mapping feature allows merchant's the ability to upload metafields with custom namespace values. This allows for integration with other third-party applications, and several first-part Shopify apps and admin features.
+
+### Value Types
+
+Shopify requires that all
+
+#### Possible Value Types
+
+| Type        | Example          |
+| ----------- | ---------------- |
+| String      | This is a string |
+| Integer     | 42               |
+| JSON String | "{key: value}"   |

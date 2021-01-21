@@ -13,6 +13,87 @@ Every import spreadsheet is divided into groups of three different row types. Th
 
 ## Base Product Row
 
+A base product row represents a complete product listing within your Shopify inventory. Your spreadsheet can be formatted to add images and variants onto a base product.
+
+### What is a "Base Variant"?
+
+Shopify's inventory options require merchants to handle data such as product SKU and inventory quantity at the variant level. This means that, in the event you are uploading a product that has no variants, a base variant will exist to manage variant-level data on your base product.
+
+**If a product has no variants**, the base product row will function as the base variant.
+
+**If a product has one or more variants**, the base product row will function as the first variant.
+
+#### Possible Fields for Base Product Rows
+
+| Field Name             | Field Status |
+| ---------------------- | ------------ |
+| Handle                 | Required     |
+| Title                  | Required     |
+| Body (HTML)            | Optional     |
+| Image Src              | Optional     |
+| Image Alt Text         | Optional     |
+| SEO Title              | Optional     |
+| SEO Description        | Optional     |
+| Type                   | Optional     |
+| Tags                   | Optional     |
+| Status                 | Optional     |
+| Published              | Optional     |
+| Vendor                 | Optional     |
+| Option1 Name           | Optional     |
+| Option1 Value          | Optional     |
+| Option2 Name           | Optional     |
+| Option2 Value          | Optional     |
+| Option3 Name           | Optional     |
+| Option3 Value          | Optional     |
+| Join Collections       | Optional     |
+| Cost Per Item          | Optional     |
+| Gift Card              | Optional     |
+| **All variant fields** | Optional     |
+
+Base product rows are identified as rows that contain values for the **Handle** and **Title** fields. Base product rows should also contain values for variant-level data as they will either function as a base variant, or the first variant where applicable.
+
 ## Image Row
 
+An image row adds an image to its base product at the time of upload. An image row will always be associated with the nearest base product row above it.
+
+**Note:** To link images to specific variants, an image must first be added to the base product via an image row.
+
+#### Possible Fields for Image Rows
+
+| Field Name           | Field Status |
+| -------------------- | ------------ |
+| Image Src            | Required     |
+| Image Alt Text       | Optional     |
+| **All other fields** | Not Allowed  |
+
+Image rows are indentified as having <u>**only**</u> an **Image Src** and, optionally, an **Image Alt Text** value.
+
 ## Variant Row
+
+A variant row adds a variant to its base product at the time of upload. A variant row will always be associated with the nearest base product row above it.
+
+#### Possible Fields for Variant Rows
+
+| Field Name                   | Field Status   |
+| ---------------------------- | -------------- |
+| Handle                       | Required       |
+| Title                        | Not Allowed    |
+| Image Src                    | Optional       |
+| Variant SKU                  | Optional       |
+| Variant Price                | Optional       |
+| Variant Position             | Optional       |
+| Variant Weight               | Optional       |
+| Variant Inventory Qty        | Optional       |
+| Variant Inventory Location   | Optional       |
+| Variant Inventory Management | Optional       |
+| Variant Compare At Price     | Optional       |
+| Variant Requires Shipping    | Optional       |
+| Variant Requires Taxable     | Optional       |
+| Variant Tax Code             | Optional       |
+| Variant Barcode              | Optional       |
+| Option1 Value                | Optional       |
+| Option2 Value                | Optional       |
+| Option3 Value                | Optional       |
+| **All other fields**         | Not Applicable |
+
+Variant rows are identified as rows that contain the same **Handle** value as the nearest base product row above it and no **Title** value.
