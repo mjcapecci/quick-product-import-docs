@@ -14,7 +14,9 @@
     "gatsby-plugin-manifest": "^2.4.33",
     "gatsby-plugin-offline": "^3.2.30",
     "gatsby-plugin-remove-trailing-slashes": "^2.3.13",
+    "gatsby-plugin-sass": "^3.1.0",
     "gatsby-plugin-sitemap": "^2.4.14",
+    "node-sass": "^5.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"

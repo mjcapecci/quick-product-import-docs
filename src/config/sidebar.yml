@@ -20,14 +20,16 @@
       link: '/formatting/limitations'
 - label: Other Features
   items:
+    - label: 'File Drop'
+      link: '/features/file-drop'
     - label: 'Mapping'
       link: '/features/mapping'
     - label: 'Verify Import'
       link: '/features/verify-import'
+    - label: 'Invoice Window'
+      link: '/features/invoice-window'
     - label: 'Upload Timer'
       link: '/features/upload-timer'
-    - label: 'Revert Upload'
-      link: '/features/revert-upload'
     - label: 'Settings'
       link: '/features/settings'
 - label: More
