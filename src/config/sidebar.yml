@@ -18,7 +18,7 @@
       link: '/formatting/metafields'
     - label: 'Limitations'
       link: '/formatting/limitations'
-- label: Other Features
+- label: Features
   items:
     - label: 'File Drop'
       link: '/features/file-drop'
@@ -30,8 +30,14 @@
       link: '/features/invoice-window'
     - label: 'Upload Timer'
       link: '/features/upload-timer'
-    - label: 'Settings'
-      link: '/features/settings'
+    - label: 'Audit Log'
+      link: '/features/audit-log'
+- label: Settings
+  items:
+    - label: 'Billing Settings'
+      link: '/settings/billing-settings'
+    - label: 'App Settings'
+      link: '/settings/app-settings'
 - label: More
   items:
     - label: FAQ

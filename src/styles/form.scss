@@ -10,7 +10,8 @@ h1 {
 
 form {
   display: table;
-  margin: 40px auto;
+  margin: auto;
+  width: 100%;
 
   input,
   textarea {
@@ -18,7 +19,7 @@ form {
     display: block;
     border: 1px solid black;
     padding: 20px;
-    width: 300px;
+    width: 100%;
     margin-bottom: 20px;
     font-size: 18px;
     outline: none;
