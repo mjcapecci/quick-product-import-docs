@@ -14,10 +14,10 @@
       link: '/formatting/field-information'
     - label: 'Spreadsheet'
       link: '/formatting/spreadsheet'
+    - label: 'Images'
+      link: '/formatting/images'
     - label: 'Metafields'
       link: '/formatting/metafields'
-    - label: 'Limitations'
-      link: '/formatting/limitations'
 - label: Features
   items:
     - label: 'File Drop'
@@ -26,8 +26,6 @@
       link: '/features/mapping'
     - label: 'Verify Import'
       link: '/features/verify-import'
-    - label: 'Invoice Window'
-      link: '/features/invoice-window'
     - label: 'Upload Timer'
       link: '/features/upload-timer'
     - label: 'Audit Log'
@@ -44,6 +42,8 @@
       link: /faq
     - label: Changelog
       link: /changelog
+    - label: Terms of Service
+      link: /terms
 - label: 'Support'
   items:
     - label: 'Contact Us'

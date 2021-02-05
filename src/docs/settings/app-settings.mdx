@@ -4,12 +4,20 @@ description: Learn about the app settings page in Quick Product Import.
 disableTableOfContents: true
 ---
 
-The Settings window is accessible via the Quick Product Import home page. Within the Settings window, merchants are able to manage various options regarding their usage plan, recent activity, and app preferences.
+import AppSettings from '../../components/imageComps/AppSettings';
 
-## Manage App Settings
+The App Settings window is accessible via the Quick Product Import main menu. Within the App Settings window, merchants are able to manage various app preferences.
 
-The Settings window is the place where merchants can change their app settings to customize their Quick Product Import Workflow.
+<AppSettings />
 
-### Options
+### App Workflow Settings
 
 **Disable Verify Step:** <br />Upon successful drop or mapping selection, skips the [Verify Import](/features/verify-import) screen and advances directly to the [Invoice Window](/features/invoice-window).
+
+### Existing Handle Behavior
+
+**Skip:** <br />Imported products with handles that exist in your store already will be skipped.
+
+**Overwrite:** <br />Imported products with handles that exist in your store already will be overwritten.
+
+**Duplicate:** <br />Imported products with handles that exist in your store already will be uploaded as duplicates.
