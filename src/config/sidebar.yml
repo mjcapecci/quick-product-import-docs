@@ -44,6 +44,8 @@
       link: /changelog
     - label: Terms of Service
       link: /terms
+    - label: Privacy Policy
+      link: /privacy-policy
 - label: 'Support'
   items:
     - label: 'Contact Us'
