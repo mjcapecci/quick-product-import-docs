@@ -12,35 +12,16 @@ const ContactForm = () => {
     });
   };
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
-      )
-      .join('&');
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    axios.post('/', {
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact-form', formData }),
-    });
-    setFormData({
-      name: '',
-      email: '',
-      message: '',
-    });
-  };
-
   return (
     <>
       <form
-        name="contact-form"
-        method="POST"
+        name="contact"
+        method="post"
         data-netlify="true"
+        data-netlify-honeypot="bot-field"
         action="/thank-you"
       >
+        <input type="hidden" name="form-name" value="contact" />
         <input
           type="text"
           name="name"
@@ -62,9 +43,7 @@ const ContactForm = () => {
           onChange={updateInput}
           value={formData.message || ''}
         ></textarea>
-        <button type="submit" onClick={handleSubmit}>
-          Submit
-        </button>
+        <button type="submit">Submit</button>
       </form>
     </>
   );
