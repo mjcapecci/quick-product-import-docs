@@ -1,5 +1,6 @@
 import React from 'react';
 import usePossibleHeaders from '../../utils/usePossibleHeaders';
+import '../styles/buttons.scss';
 
 const DefaultTemplate = () => {
   const allPossibleHeaders = usePossibleHeaders().all;
@@ -16,7 +17,10 @@ const DefaultTemplate = () => {
   };
 
   return (
-    <button onClick={() => downloadDefaultTemplate()}>
+    <button
+      className="download-button"
+      onClick={() => downloadDefaultTemplate()}
+    >
       Download Default Template
     </button>
   );

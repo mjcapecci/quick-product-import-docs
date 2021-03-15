@@ -38,6 +38,8 @@
       link: '/settings/app-settings'
 - label: More
   items:
+    - label: Best Practices
+      link: /best-practices
     - label: FAQ
       link: /faq
     - label: Changelog

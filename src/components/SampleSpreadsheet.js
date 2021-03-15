@@ -1,5 +1,6 @@
 import React from 'react';
 import SampleCSV from '../../utils/sample';
+import '../styles/buttons.scss';
 
 const SampleSpreadsheet = () => {
   const downloadSampleSpreadsheet = () => {
@@ -13,7 +14,12 @@ const SampleSpreadsheet = () => {
   };
 
   return (
-    <button onClick={() => downloadSampleSpreadsheet()}>Download Sample</button>
+    <button
+      className="download-button"
+      onClick={() => downloadSampleSpreadsheet()}
+    >
+      Download Sample
+    </button>
   );
 };
 
