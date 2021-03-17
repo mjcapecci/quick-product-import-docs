@@ -17,6 +17,11 @@ export default function usePossibleHeaders() {
       required: false,
     },
     {
+      value: 'collections_to_leave',
+      label: 'Leave Collections',
+      required: false,
+    },
+    {
       value: 'variant_inventory_qty',
       label: 'Variant Inventory Qty',
       required: false,
