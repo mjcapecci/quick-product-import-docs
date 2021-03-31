@@ -4,6 +4,8 @@
   link: '/'
 - label: 'General Usage'
   link: '/general-usage'
+- label: 'Requirements'
+  link: '/requirements'
 - label: 'Pricing'
   link: '/pricing'
 - label: Formatting
